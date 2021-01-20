@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#show").click(function() {
+                    $("#div").show("fast");
+                });
+                $("#hide").click(function() {
+                    $("#div").hide(1000,"swing");
+                });
+                $("#toggle").toggle(function() {
+                    $("#div").toggle("slow");
+                });
+            });
+        </script>
+        <style>
+            #div {
+                border: 1px solid gray;
+                background-color: purple;
+                font-size: 24pt;
+                padding-left: 10pt;
+                padding-right: 10pt;
+                height: 200px;
+                width: 300px;
+                text-align: center;
+            }
+            button {
+                margin: 5pt 5pt 0 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div"> Box </div>
+        <button id="show" style="background-color: blue; color: black; border: none; border-radius: 10px; width: 100px; height: 30px;" > Show</button>
+        <button id="hide" style="background-color: red; color:black; border: none; border-radius: 10px; width: 100px; height: 30px;" > Hide</button>
+        <button id="toggle" style="background-color: yellow; color: black; border: none; border-radius: 10px; width: 100px; height: 30px;" > Toggle</button>
+    </body>
+</html>

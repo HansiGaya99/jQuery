@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                //$("h2").hide();
+                //$("#heading").hide();
+                //$(".para").hide();
+                //$("*").hide(); 
+                //$("p:first").hide();
+                $(this).hide();
+            });
+            });
+        </script>
+        <style>
+            h2 {
+                color: blue;
+                font-size: 34px;
+
+            }
+            #heading {
+                color: green;
+                font-size: 34px;
+
+            }
+            .para {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="heading"> This is first.</h1>
+        <h2> This is second. </h2>
+        <h2> This is third. </h2>
+        <p class="para"> Paragraph </p>
+        <p class="para">Another paragraph </p>
+        <button style="background-color: red; width: 130px; height: 40px; color: white; border-radius: 10px;"> Click </button>
+    </body>
+</html>
